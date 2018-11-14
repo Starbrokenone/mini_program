@@ -1,0 +1,10 @@
+<view class="page" style="background: url('http://m.qpic.cn/psb?/V12e6XW42o3RKq/0.gJEQ1Xm4X19GtgFY.1t7dd333pkGz16MbQD6MpL84!/b/dDUBAAAAAAAA&bo=0AIBBdACAQURCT4!&rf=viewer_4'); background-size: 100% 100%;">
+  <view class="button_container">
+    <navigator class="button" url="map/details?id=index0">
+      <text>太理简介</text>
+    </navigator>
+    <navigator class="button" url="map/index">
+      <text>逛逛太理</text>   </navigator>
+  </view>
+ 
+</view>

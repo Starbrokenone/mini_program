@@ -1,0 +1,24 @@
+<!--pages/map/details.wxml-->
+<view>
+  <swiper class="swiper" indicator-dots="{{building.img.length == 1 ? false : true}}" indicator-active-color="#fff" autoplay="1" interval="3000" duration="500">
+    <block wx:for="{{building.img}}" wx:key="*this">
+      <swiper-item>
+        <image class="swiper-image" src="{{imgCDN}}{{item  + '?imageMogr2/thumbnail/1500x/interlace/1/blur/1x0/quality/100|imageslim'}}"> </image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="building">
+    <view class="buildingName">{{building.name}}</view>
+    <navigator class="nav_map" url='polyline?latitude={{building.latitude}}&longitude={{building.longitude}}'>
+      <image src="/img/location.svg"> </image>
+    </navigator>
+  </view>
+
+    <audio wx:if = "{{show}}" class = "audio" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" style = "width:100%"  controls loop></audio>
+
+  <view class="descript">
+    <view class='description'>
+      <wxparser rich-text="{{building.description}}" />
+    </view>
+  </view>
+</view> 
